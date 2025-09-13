@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIGinTacks</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #111;
+            color: white;
+            text-align: center;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+        header img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        .arrow {
+            font-size: 40px;
+            animation: bounce 1.5s infinite;
+            margin-top: 50px;
+            cursor: pointer;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+        .products {
+            margin-top: 200px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo">
+        <a href="https://youtube.com/YOURCHANNEL" target="_blank" style="color:white;">Follow me on YouTube</a>
+    </header>
+
+    <div class="arrow" onclick="document.getElementById('products').scrollIntoView({behavior: 'smooth'})">
+        ↓
+    </div>
+
+    <div class="products" id="products">
+        <h2>My Products</h2>
+        <p>Stickers coming soon...</p>
+    </div>
+</body>
+</html>
 
